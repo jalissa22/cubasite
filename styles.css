@@ -1,0 +1,22 @@
+body{
+	color:#4A45C7;
+	font-family: Museo;
+	text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.je-gridcell{
+	height: 320px;
+	width: auto;
+	overflow: hidden;
+}
+
+.bg-banner{
+	background: url(images/banner.jpg) center center no-repeat;
+	background-size: cover;
+}
