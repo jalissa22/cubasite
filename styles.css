@@ -20,3 +20,116 @@ img {
 	background: url(images/banner.jpg) center center no-repeat;
 	background-size: cover;
 }
+
+/**
+ * Class names use author initials as a
+ * namespace prefix, ex: je-grid or
+ * je-bg-cars -- the idea is to prevent
+ * naming conflicts with framework
+ * classnames.
+ */
+
+/**
+ * Custom Utilities
+ */
+.je-bg-cells {
+  background: #4b78a5;
+}
+
+.je-rounded {
+  border-radius: 1rem;
+}
+
+/**
+ * Custom Grid
+ */
+.je-grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/**
+ * Media Queries
+ *
+ * Grid is single column on mobile by default, but you can change that by
+ * adding a grid-template-area and grid-column-template to the default
+ * .je-grid class above. Likewise, you can crea many different layouts,
+ * depending on screen width, by adding them to the appropriate media queries.
+ *
+ * Below is a list of Bootstrap media query values:
+ * https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints
+ */
+@media screen and (min-width: 768px) {
+  .je-grid {
+    /* https://mozilladevelopers.github.io/playground/css-grid/08-template-areas */
+    grid-template-areas:
+      'a b b c d d'
+      'e f f g h h'
+      'i j k k l m';
+    /* https://mozilladevelopers.github.io/playground/css-grid/02-first-grid/ */
+    grid-template-columns: repeat(6, 1fr); /* Force six equal width columns. */
+  }
+  
+  /**
+   * Using nth-child of grid lets you rearrange your
+   * items without having to worry about class names;
+   * items will fall into their assigned grid cell
+   * based on their order.
+   *
+   * Anything extra will just follow the grid-template-columns
+   * rule above, and will take up one column.
+   *
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+   */
+  .je-grid :nth-child(1) {
+    grid-area: a;
+  }
+  
+  .je-grid :nth-child(2) {
+    grid-area: b;
+  }
+  
+  .je-grid :nth-child(3) {
+    grid-area: c;
+  }
+  
+  .je-grid :nth-child(4) {
+    grid-area: d;
+  }
+  
+  .je-grid :nth-child(5) {
+    grid-area: e;
+  }
+  
+  .je-grid :nth-child(6) {
+    grid-area: f;
+  }
+  
+  .je-grid :nth-child(7) {
+    grid-area: g;
+  }
+  
+  .je-grid :nth-child(8) {
+    grid-area: h;
+  }
+  
+  .je-grid :nth-child(9) {
+    grid-area: i;
+  }
+  
+  .je-grid :nth-child(10) {
+    grid-area: j;
+  }
+  
+  .je-grid :nth-child(11) {
+    grid-area: k;
+  }
+  
+  .je-grid :nth-child(12) {
+    grid-area: l;
+  }
+  
+  .je-grid :nth-child(13) {
+    grid-area: m;
+  }
+}
