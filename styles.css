@@ -3,6 +3,9 @@ body{
 	font-family: 'Sofia', 'Lobster', 'Pacifico', 'Berkshire Swash';
 	text-align: center;
 }
+p{
+	font-family: arial;
+}
 
 .je-gridcell{
 	height: 320px;
