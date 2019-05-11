@@ -8,6 +8,11 @@ p{
 	font-family: arial;
 }
 
+.title{
+	font-family: 'Lobster', cursive;
+	text-align: center;
+}
+
 .je-gridcell{
 	height: 320px;
 	width: auto;
@@ -17,4 +22,28 @@ p{
 .bg-banner{
 	background: url(images/banner.jpg) center center no-repeat;
 	background-size: cover;
+}
+
+h2 span {
+  background: white;
+  padding: 0 20px;
+  text-align: center; 
+}
+
+h2+* {
+  border-top: solid 2px #4A45C7;
+  padding-top: 28px;
+  margin-top: -28px;
+}
+
+h4 span {
+  background: white;
+  padding: 0 20px;
+  text-align: center; 
+}
+
+h4+* {
+  border-top: solid 2px #4A45C7;
+  padding-top: 28px;
+  margin-top: -28px;
 }
